@@ -55,7 +55,8 @@ module Worker
 
             # CoinRPC[withdraw.currency].settxfee fee
             @amount = (withdraw.amount*100000000.0).round / 100000000.0
-            txid = CoinRPC[withdraw.currency].sendtoaddress withdraw.channel.currency_obj.base_secret, withdraw.fund_uid, @amount.to_f
+            txid = CoinRPC[withdraw.currency].sendtoaddress withdraw.fund_uid, @amount.to_f
+            #txid = CoinRPC[withdraw.currency].sendtoaddress withdraw.channel.currency_obj.base_secret, withdraw.fund_uid, @amount.to_f
           end
   
           withdraw.whodunnit('Worker::WithdrawCoin') do
