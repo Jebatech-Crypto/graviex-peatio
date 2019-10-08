@@ -352,7 +352,7 @@ For security reason, you must setup SSL Certificate for production environment, 
 
 ## Login as Admin
 
-    Username : Jebatech_crypto
+    Username : Jebatech_Crypto
     Password : Pass@word8
 
 ## Contact Me on skype if you want get help
