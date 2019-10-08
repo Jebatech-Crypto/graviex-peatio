@@ -361,7 +361,7 @@ Skype: [Jebatech-Crypto](https://join.skype.com/invite/fqJxTPdQqeuw)
 
 ## Donate for improve more feature
 
-Bitcoin - [1Crfchooc1V5PtdpQadi2a1Lux4Wu9K1ue]
+Bitcoin - [1Crfchooc1V5PtdpQadi2a1Lux4Wu9K1ue](https://www.blockchain.com/btc/address/1Crfchooc1V5PtdpQadi2a1Lux4Wu9K1ue)
     
 
 
