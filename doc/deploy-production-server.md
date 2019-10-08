@@ -81,22 +81,16 @@ Be sure to install the latest stable Redis, as the package in the distro may be 
 
 Please follow instructions here: https://www.rabbitmq.com/install-debian.html
 
-     echo 'deb http://www.rabbitmq.com/debian/ testing main' |
-        sudo tee /etc/apt/sources.list.d/rabbitmq.list
-        wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc |
-        sudo apt-key add -
-        sudo apt-get update
-        sudo apt-get install rabbitmq-server
+    echo 'deb http://www.rabbitmq.com/debian/ testing main' | sudo tee /etc/apt/sources.list.d/rabbitmq.list
+    wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -
+    sudo apt-get update
+    sudo apt-get install rabbitmq-server
 
     sudo rabbitmq-plugins enable rabbitmq_management
     sudo service rabbitmq-server restart
     wget http://localhost:15672/cli/rabbitmqadmin
     chmod +x rabbitmqadmin
     sudo mv rabbitmqadmin /usr/local/sbin
-    
-    rabbitmqctl add_user deploy *****
-    rabbitmqctl set_user_tags deploy administrator
-    rabbitmqctl set_permissions -p / deploy ".*" ".*" ".*"
 
 ### 6. Install Bitcoind
 
