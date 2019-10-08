@@ -1,4 +1,4 @@
-Setup local development environment on Ubuntu 14.04
+Setup local development environment on Ubuntu 16.04
 -------------------------------------
 
 ### Overview
@@ -40,13 +40,13 @@ Installing [rbenv](https://github.com/sstephenson/rbenv) using a Installer
 
 Install Ruby through rbenv:
 
-    rbenv install 2.2.1
-    rbenv global 2.2.1
+    rbenv install 2.2.7
+    rbenv global 2.2.7
 
 Install bundler
 
     echo "gem: --no-ri --no-rdoc" > ~/.gemrc
-    gem install bundler
+    gem install bundler -1.9.2
     rbenv rehash
 
 ### Step 2: Install MySQL
@@ -97,6 +97,9 @@ Insert the following lines into the bitcoin.conf, and replce with your username 
 
     # If run on the test network instead of the real bitcoin network
     testnet=1
+
+    # For Increase block space on 10GB use space
+    prune=10000
 
     # You must set rpcuser and rpcpassword to secure the JSON-RPC api
     # Please make rpcpassword to something secure, `5gKAgrJv8CQr2CGUhjVbBFLSj29HnE6YGXvfykHJzS3k` for example.
@@ -157,18 +160,22 @@ A JavaScript Runtime is needed for Asset Pipeline to work. Any runtime will do b
 More details to visit [pusher official website](http://pusher.com)
 
     # uncomment Pusher related settings
-    vim config/application.yml
+    sudo nano config/application.yml
 
 **Setup bitcoind rpc endpoint**
 
     # replace username:password and port with the one you set in
     # username and password should only contain letters and numbers, do not use email as username
     # bitcoin.conf in previous step
-    vim config/currencies.yml
+    sudo nano config/currencies.yml
 
 **Config database settings**
 
-    vim config/database.yml
+    # Insert your MYSQL root password and change change database name
+    database: peatio_development to database: peatio_production
+    username: root
+    password: your_mysql_root_password
+    sudo nano config/database.yml
 
     # Initialize the database and load the seed data
     bundle exec rake db:setup

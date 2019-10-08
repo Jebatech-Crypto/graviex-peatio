@@ -16,12 +16,12 @@ Peatio is developed for Mac and Linux operating system, Ubuntu 14.04 LTS is reco
 
 ## Officially supports
 
-* Ubuntu Linux 14.04 LTS
+* Ubuntu Linux 16.04 LTS
 * Mac OS X Mavericks
 
 ## Ruby versions
 
-Peatio requires Ruby (MRI) 2.1.0+. You will have to use the standard MRI implementation of Ruby.
+Peatio requires Ruby (MRI) 2.2.7+. You will have to use the standard MRI implementation of Ruby.
 
 ## Hardware requirements
 

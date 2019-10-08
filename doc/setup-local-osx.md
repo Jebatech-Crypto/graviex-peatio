@@ -28,15 +28,15 @@ Add rbenv to bash so that it loads every time you open a terminal
 
 Install Ruby and set it as the default version
 
-    rbenv install 2.2.1
-    rbenv global 2.2.1
+    rbenv install 2.2.7
+    rbenv global 2.2.7
 
     ruby -v
 
 Install bundler
 
     echo "gem: --no-ri --no-rdoc" > ~/.gemrc
-    gem install bundler
+    gem install bundler -v 1.9.2
     rbenv rehash
 
 ### 3. Install MySQL
