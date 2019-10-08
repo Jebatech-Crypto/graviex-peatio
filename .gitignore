@@ -15,6 +15,9 @@
 # Ignore uploaded files
 /public/uploads
 
+# Ingnore daemons
+/lib/daemons/*
+
 # Ignore all logfiles and tempfiles.
 log
 tmp

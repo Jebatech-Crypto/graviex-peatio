@@ -349,3 +349,8 @@ For security reason, you must setup SSL Certificate for production environment, 
     sudo service nginx restart
 
     then go to your domain name as https://yourdomain.com
+
+## Login as Admin
+
+    Username : Jebatech_crypto
+    Password : Pass@word8
