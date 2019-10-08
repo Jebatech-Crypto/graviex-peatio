@@ -357,7 +357,7 @@ For security reason, you must setup SSL Certificate for production environment, 
 
 ## Contact Me on skype if you want get help
 
-    Skype: Jebatech-Crypto 
-    https://join.skype.com/invite/fqJxTPdQqeuw
+    Skype: [Jebatech-Crypto](https://join.skype.com/invite/fqJxTPdQqeuw)
+    
 
 
