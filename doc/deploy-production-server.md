@@ -67,15 +67,13 @@ Install bundler
 
 ### 3. Install MySQL
 
-    sudo apt-get install mysql-server  mysql-client  libmysqlclient-dev
+    sudo apt-get install -y mysql-server  mysql-client  libmysqlclient-dev
 
 ### 4. Install Redis
 
 Be sure to install the latest stable Redis, as the package in the distro may be a bit old:
 
-    sudo apt-add-repository -y ppa:rwky/redis
-    sudo apt-get update
-    sudo apt-get install redis-server
+    sudo apt install -y redis-server 
 
 ### 5. Install RabbitMQ
 
@@ -102,7 +100,7 @@ Please follow instructions here: https://www.rabbitmq.com/install-debian.html
 
     mkdir -p ~/.bitcoin
     touch ~/.bitcoin/bitcoin.conf
-    vim ~/.bitcoin/bitcoin.conf
+    nano ~/.bitcoin/bitcoin.conf
 
 Insert the following lines into the bitcoin.conf, and replce with your username and password.
 
@@ -142,10 +140,6 @@ Add the passenger repository. Note that this only works for Ubuntu 14.04. For ot
 
     sudo add-apt-repository 'deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main'
     sudo apt-get update
-
-Install nginx and passenger
-
-    sudo apt-get install nginx-extras passenger
 
 Install our PGP key and add HTTPS support for APT
     
@@ -256,6 +250,8 @@ More details to visit [pusher official website](http://pusher.com)
     bundle exec rake assets:precompile
 
 **Run Daemons**
+    # add permission
+    chmod +x ./lib/daemons/*
 
     # start all daemons
     bundle exec rake daemons:start
