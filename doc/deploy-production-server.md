@@ -250,6 +250,7 @@ More details to visit [pusher official website](http://pusher.com)
     bundle exec rake assets:precompile
 
 **Run Daemons**
+    
     # add permission
     chmod +x ./lib/daemons/*
 
