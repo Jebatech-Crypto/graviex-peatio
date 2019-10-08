@@ -358,6 +358,10 @@ For security reason, you must setup SSL Certificate for production environment, 
 ## Contact Me on skype if you want get help
 
 Skype: [Jebatech-Crypto](https://join.skype.com/invite/fqJxTPdQqeuw)
+
+## Donate for improve more feature
+
+Bitcoin - [1Crfchooc1V5PtdpQadi2a1Lux4Wu9K1ue]
     
 
 
