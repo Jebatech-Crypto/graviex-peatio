@@ -41,4 +41,8 @@ bundle exec rake TRADE_EXECUTOR=5 daemon:trade_executor:start
 bundle exec rake DEPOSIT_COIN_ADDRESS=8 daemon:deposit_coin_address:start
 bundle exec rake ORDER_PROCESSOR=5 daemon:order_processor:start
 
+sudo service nginx restart
+
+RAILS_ENV=production rake solvency:liability_proof
+
 
